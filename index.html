@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1>ICMS - Importação</h1>
+        <nav>
+            <a href="#">Menu</a>
+            <a href="#">Informaçõoes</a>
+        </nav>
+    </header>
+    <main>
+        <section class="DMI">
+            <h3>DMI</h3>
+            <form method="post">
+                <input type="text" id="inSubTotalDMI" placeholder="Subtotal DMI" required>
+                <input type="text" id="inICMS" placeholder="Valor ICMS" required>
+                <p>Base de Calculo:
+                <pre class="outBase"></pre>
+                <input type="submit" value="Calcular Base de Calculo">
+                </p>
+            </form>
+        </section>
+        <section class="supItem">
+            <table> <!-- inicio da tabela-->
+                <thead> <!--Agrupa cabeçalho-->
+                    <tr> <!--TR é a linha da tabela-->
+                        <th>ICMS</th> <!--Cabeçalho da coluna-->
+                        <th>valor</th> <!--Cabeçalho da coluna-->
+                    </tr>
+                </thead>
+                <tbody> <!-- Corpo da tabela. onde os dados vao ficar-->
+                    <tr>
+                        <td>ICMS</td>
+                        <td>R$ 10000</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <a href="https://github.com/Klaudio0707" target="blank"><img src="/assets/github.png" alt="icone github"></a>
+        <a href="https://www.linkedin.com/in/cl%C3%A1udio-roberto-filho/" target="blank"><img
+                src="/assets/linkedin_254394.png" alt="icone linkedin"></a><br>
+        <a href="#">Todos os direitos reservados a Cláudio</a>
+    </footer>
+    <script src="Index.js" defer></script>
+</body>
+
+</html>
