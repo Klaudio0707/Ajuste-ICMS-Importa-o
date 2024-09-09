@@ -28,27 +28,80 @@
                 </p>
             </form>
         </section>
+        <section class="SUP3760">
+            <form>
+                <h3>SUP 3760</h3>
+                <table> <!-- inicio da tabela-->
+                    <thead> <!--Agrupa cabeçalho-->
+                        <tr> <!--TR é a linha da tabela-->
+                            <th>SUP 3760 - Valor</th> <!--Cabeçalho da coluna-->
+                            <th>Valor DMI</th> <!--Cabeçalho da coluna-->
+                            <th>Diferença p/ Ajustar</th>
+                           
+                        </tr>
+                    </thead>
+                    <tbody> <!-- Corpo da tabela. onde os dados vao ficar-->
+                        <tr>
+                            <td><input type="text" id="supICMS" placeholder="ICMS - SUP3760" onblur="ICMS()"></td>                         </td>
+                            <td>ICMS: <pre class="ICMS"></pre></td>
+                            <td><pre class="dif_ICMS"></pre></td>                         
+                        </tr>
+                    </tbody>
+                    <tbody> <!-- Corpo da tabela. onde os dados vao ficar-->
+                        <tr>
+                            <td><input type="text" id="supTotal" placeholder="TOTAL - SUP3760" onblur="TOTAL()"></td>                         </td>
+                            <td>Total DMI: <pre class="Total_DMI"></pre></td>
+                            <td><pre class="dif_Total"></pre></td>                         
+                        </tr>
+                    </tbody>
+                </table>              
+            </form>
+        </section>
         <section class="supItem">
             <table> <!-- inicio da tabela-->
                 <thead> <!--Agrupa cabeçalho-->
                     <tr> <!--TR é a linha da tabela-->
                         <th>ICMS</th> <!--Cabeçalho da coluna-->
-                        <th>valor</th> <!--Cabeçalho da coluna-->
+                        <th>Aliquota</th> <!--Cabeçalho da coluna-->
+                        <th>Red. Base</th>
+                        <th>Difer.</th>
+                        <th>Base Calculo</th>
+                        <th>Valor</th>
+                        <th>%GT</th>
+                        <th>Centavos a reduzir</th>
                     </tr>
                 </thead>
                 <tbody> <!-- Corpo da tabela. onde os dados vao ficar-->
                     <tr>
-                        <td>ICMS</td>
-                        <td>R$ 10000</td>
+                        <td>Dec(Usuario)</td>
+                        <td>20,50%</td>
+                        <td>75,61%</td>
+                        <td>000</td>
+                        <td><pre class="base_cal_1"></pre></td>
+                        <td><pre class="valor_1"></pre></td>
+                        <td><pre class="GT_1"></pre></td>
+                        <td><pre class="centavos_1"></pre></td>
+                    </tr>
+                </tbody>
+                <tbody> <!-- Corpo da tabela. onde os dados vao ficar-->
+                    <tr>
+                        <td>Dec(Sistema)</td>
+                        <td>20,50%</td>
+                        <td>75,61%</td>
+                        <td>000</td>
+                        <td><input type="text" id="inDif_1"></td>
+                        <td><pre class="valor_1"></pre></td>
+                        <td><pre class="GT_1"></pre></td>
+                        <td><pre class="centavos_1"></pre></td>
                     </tr>
                 </tbody>
             </table>
         </section>
     </main>
     <footer>
-        <a href="https://github.com/Klaudio0707" target="blank"><img src="/assets/github.png" alt="icone github"></a>
+        <a href="https://github.com/Klaudio0707" target="blank"><img src="./assets/github.png" alt="icone github"></a>
         <a href="https://www.linkedin.com/in/cl%C3%A1udio-roberto-filho/" target="blank"><img
-                src="/assets/linkedin_254394.png" alt="icone linkedin"></a><br>
+                src="./assets/linkedin_254394.png" alt="icone linkedin"></a><br>
         <a href="#">Todos os direitos reservados a Cláudio</a>
     </footer>
     <script src="Index.js" defer></script>
